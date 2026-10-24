@@ -54,7 +54,8 @@ import '../styles/global.css';
 
 			<div class="project-list">
 				<article class="project">
-					<div class="project-visual project-visual--lecal">
+					<a class="project-visual project-visual--lecal project-link" href="https://lecal-app-cuoy-eot16hqge-mateos-projects-3cb48853.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto LeCal">
+						<img src="https://lecal-app-cuoy-eot16hqge-mateos-projects-3cb48853.vercel.app/og-image.png" alt="LeCal" onerror="this.style.display='none';" />
 						<div class="lecal-ui" aria-hidden="true">
 							<div class="lecal-header">
 								<span>LeCal</span>
@@ -78,7 +79,7 @@ import '../styles/global.css';
 							</div>
 						</div>
 						<span class="project-index">01</span>
-					</div>
+					</a>
 					<div class="project-info">
 						<span>Web & Producto • 2025</span>
 						<h3>LeCal</h3>
@@ -95,7 +96,8 @@ import '../styles/global.css';
 				</article>
 
 				<article class="project">
-					<div class="project-visual project-visual--lecal">
+					<a class="project-visual project-visual--lecal project-link" href="https://santiago-beracochea-app.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto Santiago Beracochea">
+						<img src="https://santiago-beracochea-app.vercel.app/og-image.png" alt="Santiago Beracochea" onerror="this.style.display='none';" />
 						<div class="lecal-ui" aria-hidden="true">
 							<div class="lecal-header">
 								<span>S.B.</span>
@@ -119,7 +121,7 @@ import '../styles/global.css';
 							</div>
 						</div>
 						<span class="project-index">02</span>
-					</div>
+					</a>
 					<div class="project-info">
 						<span>Web & Portfolio • 2025</span>
 						<h3>Santiago Beracochea</h3>
@@ -136,7 +138,8 @@ import '../styles/global.css';
 				</article>
 
 				<article class="project">
-					<div class="project-visual project-visual--rz">
+					<a class="project-visual project-visual--rz project-link" href="https://rz-automotores-app-cclj.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto RZ Automotores">
+						<img src="https://rz-automotores-app-cclj.vercel.app/og-image.png" alt="RZ Automotores" onerror="this.style.display='none';" />
 						<div class="rz-ui" aria-hidden="true">
 							<div class="rz-header">
 								<div class="rz-logo">RZ</div>
@@ -158,7 +161,7 @@ import '../styles/global.css';
 							</div>
 						</div>
 						<span class="project-index">03</span>
-					</div>
+					</a>
 					<div class="project-info">
 						<span>Automotores & Web • 2025</span>
 						<h3>RZ Automotores</h3>
@@ -308,8 +311,11 @@ import '../styles/global.css';
 	.project { display: grid; grid-template-columns: 1.55fr 1fr; gap: 70px; align-items: center; }
 	.project:nth-child(even) .project-visual { order: 2; }
 	.project:nth-child(even) .project-info { order: 1; }
-	.project-visual { height: 530px; position: relative; overflow: hidden; border-radius: 4px; }
-	.project-index { position: absolute; left: 20px; bottom: 18px; color: #ffffffaa; font: 500 11px 'Manrope'; letter-spacing: 1px; z-index: 2; }
+	.project-visual { height: 530px; position: relative; overflow: hidden; border-radius: 4px; display: block; cursor: pointer; }
+	.project-visual img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; z-index: 0; }
+	.project-visual > *:not(img) { position: relative; z-index: 1; }
+	.project-index { position: absolute; left: 20px; bottom: 18px; color: #ffffffaa; font: 500 11px 'Manrope'; letter-spacing: 1px; z-index: 3; }
+	.project-link:hover img { transform: scale(1.02); transition: transform 0.3s ease; }
 	.project-info > span { color: var(--blue); font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; }
 	.project-info h3 { margin: 14px 0 18px; font-size: 48px; font-weight: 500; }
 	.project-info p { margin: 0; color: var(--muted); line-height: 1.7; }
