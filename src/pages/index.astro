@@ -1,0 +1,361 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/global.css';
+---
+
+<Layout>
+	<main class="portfolio">
+		<header class="site-header">
+			<a class="logo" href="#inicio" aria-label="Ir al inicio">
+				MB<span>.</span>
+			</a>
+			<nav aria-label="Navegación principal">
+				<a href="#proyectos">Proyectos</a>
+				<a href="#sobre-mi">Sobre mí</a>
+				<a href="#contacto">Contacto</a>
+			</nav>
+			<a class="header-cta" href="#contacto">
+				Hablemos <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 16 16 4M7 4h9v9" /></svg>
+			</a>
+		</header>
+
+		<section class="hero" id="inicio">
+			<div class="hero-glow"></div>
+			<div class="hero-orbit hero-orbit--one"></div>
+			<div class="hero-orbit hero-orbit--two"></div>
+			<div class="hero-content">
+				<div class="eyebrow"><span></span> Diseñador digital independiente</div>
+				<h1>
+					Diseño ideas que
+					<span> conectan</span> y perduran.
+				</h1>
+				<p>
+					Creo experiencias digitales con propósito para marcas que quieren
+					avanzar, diferenciarse y dejar una huella.
+				</p>
+				<div class="hero-actions">
+					<a class="button button--primary" href="#proyectos">
+						Ver proyectos <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 16 16 4M7 4h9v9" /></svg>
+					</a>
+					<a class="button button--secondary" href="#sobre-mi">Conóceme</a>
+				</div>
+			</div>
+			<div class="scroll-hint"><span></span> SCROLL PARA EXPLORAR</div>
+		</section>
+
+		<section class="projects" id="proyectos">
+			<div class="section-heading">
+				<div>
+					<span class="section-kicker">TRABAJO SELECCIONADO</span>
+					<h2>Proyectos recientes</h2>
+				</div>
+				<p>Una selección de productos, identidades y experiencias creadas con estrategia y atención al detalle.</p>
+			</div>
+
+			<div class="project-list">
+				<article class="project">
+					<div class="project-visual project-visual--lecal">
+						<div class="lecal-ui" aria-hidden="true">
+							<div class="lecal-header">
+								<span>LeCal</span>
+								<div class="lecal-dots"><span></span><span></span><span></span></div>
+							</div>
+							<div class="lecal-content">
+								<div class="lecal-sidebar">
+									<div class="lecal-item active"></div>
+									<div class="lecal-item"></div>
+									<div class="lecal-item"></div>
+									<div class="lecal-item"></div>
+								</div>
+								<div class="lecal-main">
+									<div class="lecal-card"></div>
+									<div class="lecal-grid">
+										<div class="lecal-card-sm"></div>
+										<div class="lecal-card-sm"></div>
+										<div class="lecal-card-sm"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<span class="project-index">01</span>
+					</div>
+					<div class="project-info">
+						<span>Web & Producto • 2025</span>
+						<h3>LeCal - Santiago Beracochea</h3>
+						<p>Plataforma web para LeCal, proyecto desarrollado junto a Santiago Beracochea. Experiencia digital optimizada y diseño funcional.</p>
+						<div class="tags">
+							<span>Web</span>
+							<span>UX/UI</span>
+							<span>Producto</span>
+						</div>
+						<a href="https://lecal.com.ar" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto LeCal">
+							Ver proyecto <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 16 16 4M7 4h9v9" /></svg>
+						</a>
+					</div>
+				</article>
+
+				<article class="project">
+					<div class="project-visual project-visual--rz">
+						<div class="rz-ui" aria-hidden="true">
+							<div class="rz-header">
+								<div class="rz-logo">RZ</div>
+								<div class="rz-nav">
+									<span></span><span></span><span></span><span></span>
+								</div>
+							</div>
+							<div class="rz-hero">
+								<div class="rz-hero-text">
+									<div class="rz-line"></div>
+									<div class="rz-line short"></div>
+								</div>
+								<div class="rz-car"></div>
+							</div>
+							<div class="rz-cards">
+								<div class="rz-card"></div>
+								<div class="rz-card"></div>
+								<div class="rz-card"></div>
+							</div>
+						</div>
+						<span class="project-index">02</span>
+					</div>
+					<div class="project-info">
+						<span>Automotores & Web • 2025</span>
+						<h3>RZ Automotores</h3>
+						<p>Landing page y sitio web para RZ Automotores. Diseño moderno para concesionaria con enfoque en catálogo de vehículos y experiencia de usuario.</p>
+						<div class="tags">
+							<span>Web</span>
+							<span>Automotores</span>
+							<span>Landing Page</span>
+						</div>
+						<a href="https://rzautomotores.com.ar" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto RZ Automotores">
+							Ver proyecto <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 16 16 4M7 4h9v9" /></svg>
+						</a>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section class="about" id="sobre-mi">
+			<span class="section-kicker">SOBRE MÍ</span>
+			<div class="about-grid">
+				<div class="about-profile">
+					<img src="/profile.jpg" alt="Mateo Beracochea" class="profile-photo" />
+					<h2>Diseño con curiosidad, claridad y atención al detalle.</h2>
+				</div>
+				<div>
+					<p>
+						Soy Mateo Beracochea, diseñador digital especializado en crear productos y
+						marcas que se sienten tan bien como funcionan. Colaboro con
+						equipos ambiciosos desde la idea hasta el último detalle.
+					</p>
+					<div class="stats">
+						<div><strong>+3</strong><span>Años creando</span></div>
+						<div><strong>15+</strong><span>Proyectos lanzados</span></div>
+						<div><strong>Argentina</strong><span>Base</span></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact" id="contacto">
+			<span class="section-kicker">¿TIENES UNA IDEA?</span>
+			<h2>Hagamos algo<br /><em>extraordinario.</em></h2>
+			<a href="mailto:hola@mateoberacochea.com">
+				hola@mateoberacochea.com <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 16 16 4M7 4h9v9" /></svg>
+			</a>
+		</section>
+
+		<footer>
+			<span>© 2025 Mateo Beracochea</span>
+			<div><a href="#linkedin">LinkedIn</a><a href="#behance">Behance</a><a href="#instagram">Instagram</a></div>
+			<a href="#inicio">Volver arriba ↑</a>
+		</footer>
+	</main>
+</Layout>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap');
+
+	:root {
+		--blue: #1264e8;
+		--blue-dark: #082e74;
+		--navy: #07162f;
+		--ink: #0a1830;
+		--muted: #657089;
+		--sky: #eaf3ff;
+		--line: #dbe4f1;
+		--white: #ffffff;
+	}
+
+	html { scroll-behavior: smooth; }
+	body {
+		margin: 0;
+		background: var(--white);
+		color: var(--ink);
+		font-family: 'DM Sans', sans-serif;
+	}
+	* { box-sizing: border-box; }
+	a { color: inherit; text-decoration: none; }
+	svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.6; }
+
+	.portfolio {
+		font-family: 'DM Sans', sans-serif;
+	}
+
+	.site-header {
+		height: 84px;
+		max-width: 1240px;
+		margin: 0 auto;
+		padding: 0 28px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+		z-index: 20;
+	}
+	.logo { font: 700 22px 'Manrope'; letter-spacing: -1px; }
+	.logo span { color: var(--blue); }
+	nav { display: flex; gap: 36px; font-size: 14px; font-weight: 500; }
+	nav a, footer a { transition: color .2s ease; }
+	nav a:hover, footer a:hover { color: var(--blue); }
+	.header-cta { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; }
+
+	.hero {
+		min-height: calc(100vh - 84px);
+		padding: 110px 28px 65px;
+		position: relative;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		background: linear-gradient(180deg, #fff 0%, #f8fbff 100%);
+	}
+	.hero-content { width: min(100%, 1040px); position: relative; z-index: 2; }
+	.eyebrow, .section-kicker {
+		color: var(--blue);
+		font-size: 11px;
+		font-weight: 600;
+		letter-spacing: 2px;
+	}
+	.eyebrow { display: flex; align-items: center; gap: 12px; }
+	.eyebrow span { width: 28px; height: 1px; background: var(--blue); }
+	h1, h2, h3 { margin: 0; font-family: 'Manrope', sans-serif; letter-spacing: -.045em; }
+	h1 { max-width: 900px; margin-top: 26px; font-size: clamp(56px, 7.5vw, 104px); font-weight: 500; line-height: .98; }
+	h1 span { color: var(--blue); font-style: italic; font-weight: 400; }
+	.hero-content > p { max-width: 530px; margin: 32px 0 0; color: var(--muted); font-size: 18px; line-height: 1.65; }
+	.hero-actions { display: flex; gap: 12px; margin-top: 38px; }
+	.button {
+		min-width: 156px; height: 52px; padding: 0 24px; display: inline-flex;
+		align-items: center; justify-content: center; gap: 12px; border-radius: 50px;
+		font-size: 14px; font-weight: 600; transition: all .25s ease;
+	}
+	.button--primary { color: #fff; background: var(--blue); box-shadow: 0 12px 30px #1264e82a; }
+	.button--primary:hover { background: #0b51c3; transform: translateY(-2px); }
+	.button--secondary { border: 1px solid var(--line); background: #fff; }
+	.button--secondary:hover { border-color: var(--blue); color: var(--blue); }
+	.hero-glow { position: absolute; width: 700px; height: 700px; right: -260px; top: -100px; border-radius: 50%; background: radial-gradient(circle, #cfe3ff 0%, #edf5ff88 42%, transparent 70%); }
+	.hero-orbit { position: absolute; border: 1px solid #cbdcf4; border-radius: 50%; opacity: .6; }
+	.hero-orbit--one { width: 570px; height: 570px; right: -90px; top: 40px; }
+	.hero-orbit--two { width: 390px; height: 390px; right: 0; top: 130px; }
+	.scroll-hint { position: absolute; right: 34px; bottom: 80px; display: flex; align-items: center; gap: 12px; color: #8290a6; font-size: 9px; letter-spacing: 1.6px; transform: rotate(90deg) translateX(50%); transform-origin: right center; }
+	.scroll-hint span { width: 34px; height: 1px; background: #aab6c8; }
+
+	.projects { max-width: 1240px; margin: 0 auto; padding: 120px 28px 140px; }
+	.section-heading { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 66px; }
+	.section-heading h2 { margin-top: 14px; font-size: clamp(42px, 5vw, 66px); font-weight: 500; }
+	.section-heading > p { max-width: 390px; margin: 0 0 6px; color: var(--muted); line-height: 1.7; }
+	.project-list { display: grid; gap: 110px; }
+	.project { display: grid; grid-template-columns: 1.55fr 1fr; gap: 70px; align-items: center; }
+	.project:nth-child(even) .project-visual { order: 2; }
+	.project:nth-child(even) .project-info { order: 1; }
+	.project-visual { height: 530px; position: relative; overflow: hidden; border-radius: 4px; }
+	.project-index { position: absolute; left: 20px; bottom: 18px; color: #ffffffaa; font: 500 11px 'Manrope'; letter-spacing: 1px; z-index: 2; }
+	.project-info > span { color: var(--blue); font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; }
+	.project-info h3 { margin: 14px 0 18px; font-size: 48px; font-weight: 500; }
+	.project-info p { margin: 0; color: var(--muted); line-height: 1.7; }
+	.tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 25px 0 32px; }
+	.tags span { padding: 7px 12px; border: 1px solid var(--line); border-radius: 20px; color: #55627a; font-size: 11px; }
+	.project-info > a { display: inline-flex; align-items: center; gap: 12px; padding-bottom: 6px; border-bottom: 1px solid var(--ink); font-size: 13px; font-weight: 600; }
+	.project-info > a svg { transition: transform .2s; }
+	.project-info > a:hover svg { transform: translate(3px, -3px); }
+
+	.project-visual--lecal { background: linear-gradient(145deg, #1e3a8a, #3b82f6); }
+	.lecal-ui { position: absolute; inset: 55px 0 0 75px; border-radius: 12px 0 0 0; background: #f8fafc; box-shadow: -20px 22px 50px #00336e55; overflow: hidden; }
+	.lecal-header { height: 48px; background: white; border-bottom: 1px solid #e2e8f0; display: flex; align-items: center; justify-content: space-between; padding: 0 16px; }
+	.lecal-header span { font: 600 14px 'Manrope'; color: #1e293b; }
+	.lecal-dots { display: flex; gap: 6px; }
+	.lecal-dots span { width: 8px; height: 8px; border-radius: 50%; background: #cbd5e1; }
+	.lecal-content { display: flex; height: calc(100% - 48px); }
+	.lecal-sidebar { width: 70px; background: #1e293b; padding: 12px; display: flex; flex-direction: column; gap: 8px; }
+	.lecal-item { height: 36px; border-radius: 6px; background: #475569; }
+	.lecal-item.active { background: #3b82f6; }
+	.lecal-main { flex: 1; padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+	.lecal-card { height: 80px; background: white; border-radius: 8px; border: 1px solid #e2e8f0; }
+	.lecal-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+	.lecal-card-sm { height: 60px; background: white; border-radius: 6px; border: 1px solid #e2e8f0; }
+
+	.project-visual--rz { background: linear-gradient(145deg, #dc2626, #ef4444); }
+	.rz-ui { position: absolute; inset: 55px 0 0 75px; border-radius: 12px 0 0 0; background: #111; box-shadow: -20px 22px 50px #7f1d1d55; overflow: hidden; color: white; }
+	.rz-header { height: 48px; background: #000; border-bottom: 1px solid #333; display: flex; align-items: center; justify-content: space-between; padding: 0 16px; }
+	.rz-logo { font: 700 16px 'Manrope'; color: #ef4444; }
+	.rz-nav { display: flex; gap: 12px; }
+	.rz-nav span { width: 30px; height: 4px; background: #666; border-radius: 2px; }
+	.rz-hero { padding: 20px 16px; display: flex; justify-content: space-between; align-items: center; }
+	.rz-hero-text { display: flex; flex-direction: column; gap: 8px; }
+	.rz-line { width: 80px; height: 8px; background: white; border-radius: 4px; }
+	.rz-line.short { width: 50px; }
+	.rz-car { width: 70px; height: 30px; background: linear-gradient(90deg, #ef4444, #dc2626); border-radius: 4px; }
+	.rz-cards { padding: 0 16px; display: flex; gap: 8px; }
+	.rz-card { flex: 1; height: 40px; background: #1a1a1a; border-radius: 4px; border: 1px solid #333; }
+
+	.about { padding: 120px max(28px, calc((100vw - 1184px) / 2)); background: var(--sky); }
+	.about-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 100px; margin-top: 34px; }
+	.about-profile { display: flex; flex-direction: column; gap: 32px; }
+	.profile-photo { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 4px solid white; box-shadow: 0 20px 40px #1264e814; }
+	.about h2 { font-size: clamp(38px, 4.5vw, 64px); font-weight: 500; line-height: 1.08; }
+	.about-grid > div > p { margin: 5px 0 44px; color: var(--muted); font-size: 17px; line-height: 1.8; }
+	.stats { display: grid; grid-template-columns: repeat(3, 1fr); padding-top: 28px; border-top: 1px solid #cbd9e9; }
+	.stats div { display: flex; flex-direction: column; gap: 4px; }
+	.stats strong { font: 500 28px 'Manrope'; color: var(--blue); }
+	.stats span { color: var(--muted); font-size: 11px; }
+
+	.contact { min-height: 560px; padding: 110px 28px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; background: var(--navy); color: white; }
+	.contact .section-kicker { color: #68a6ff; }
+	.contact h2 { margin: 24px 0 36px; font-size: clamp(50px, 7vw, 90px); font-weight: 500; line-height: .98; }
+	.contact h2 em { color: #61a1ff; font-weight: 400; }
+	.contact > a { display: inline-flex; align-items: center; gap: 12px; padding-bottom: 8px; border-bottom: 1px solid #587197; color: #dbe9ff; font-size: 16px; }
+
+	footer { padding: 28px max(28px, calc((100vw - 1184px) / 2)); display: flex; justify-content: space-between; color: var(--muted); font-size: 11px; }
+	footer div { display: flex; gap: 28px; }
+
+	@media (max-width: 850px) {
+		nav { display: none; }
+		.hero { min-height: 720px; padding-top: 90px; }
+		.section-heading { align-items: flex-start; flex-direction: column; gap: 24px; }
+		.project { grid-template-columns: 1fr; gap: 34px; }
+		.project:nth-child(even) .project-visual { order: 1; }
+		.project:nth-child(even) .project-info { order: 2; }
+		.project-visual { height: 440px; }
+		.project-info h3 { font-size: 40px; }
+		.about-grid { grid-template-columns: 1fr; gap: 42px; }
+		.profile-photo { width: 150px; height: 150px; }
+	}
+
+	@media (max-width: 560px) {
+		.site-header { height: 70px; padding: 0 20px; }
+		.header-cta { font-size: 12px; }
+		.hero { min-height: 650px; padding: 80px 20px 45px; }
+		h1 { font-size: 51px; }
+		.hero-content > p { font-size: 16px; }
+		.hero-actions { flex-direction: column; align-items: flex-start; }
+		.scroll-hint, .hero-orbit--one { display: none; }
+		.projects { padding: 90px 20px 100px; }
+		.project-list { gap: 85px; }
+		.project-visual { height: 350px; }
+		.lecal-ui, .rz-ui { inset: 42px 0 0 38px; }
+		.about { padding: 90px 20px; }
+		.stats { gap: 16px; }
+		.contact { min-height: 490px; }
+		footer { padding: 24px 20px; flex-wrap: wrap; gap: 20px; }
+		footer div { order: 3; width: 100%; }
+	}
+</style>
